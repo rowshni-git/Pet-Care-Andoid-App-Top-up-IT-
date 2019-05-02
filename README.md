@@ -3,4 +3,4 @@
 Features:
 Firebase authentication, Login and sign up, Splash Screen, Image Gallery, Grid view, Call function, Floating button etc.
 #
-Youtube Link: https://www.youtube.com/watch?v=HLHvuVshon0
+YouTube Link: https://www.youtube.com/watch?v=HLHvuVshon0
