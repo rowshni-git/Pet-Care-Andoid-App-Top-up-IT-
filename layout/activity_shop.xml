@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="bracu.topup.petcareapp.mainactivity_grid_package.Shop_Activity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/petbangla"
+            android:clickable="true"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/petbangla"
+            android:onClick="openPetBangla"/>
+
+        <ImageView
+            android:clickable="true"
+
+            android:id="@+id/petbd"
+            android:layout_below="@+id/petbangla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/petcom"
+            android:onClick="openPetcom"/>
+        <ImageView
+            android:id="@+id/petcobd"
+            android:clickable="true"
+
+            android:layout_below="@+id/petbd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/petco"
+            android:onClick="openPetcoBD"/>
+        <ImageView
+            android:id="@+id/petsupply"
+            android:clickable="true"
+
+            android:layout_below="@+id/petcobd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/petsupply"
+            android:onClick="openPetSupply"/>
+    </RelativeLayout>
+
+</ScrollView>

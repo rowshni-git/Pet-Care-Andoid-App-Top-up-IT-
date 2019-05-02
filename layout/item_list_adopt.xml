@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeLadopt"
+    android:padding="10dp">
+    <RelativeLayout
+        android:id="@+id/rellist1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/adoptlistimg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/heart"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/></RelativeLayout>
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/rellist1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/adpetname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pet name: pompom"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:id="@+id/adpetage"
+            android:layout_below="@+id/adpetname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age: 2.5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        <TextView
+            android:id="@+id/adpetgender"
+            android:layout_below="@+id/adpetage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender: male"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        <TextView
+            android:id="@+id/adpetnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact no: 018xxxxxxxx"
+            android:layout_below="@id/adpetgender"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

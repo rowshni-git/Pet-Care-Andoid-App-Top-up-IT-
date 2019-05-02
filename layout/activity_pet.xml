@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/relPET"
+    android:padding="10dp"
+    android:background="#ffffff">
+    <ListView
+        android:id="@+id/addPETLIST"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+    <!--fab-->
+    <com.github.clans.fab.FloatingActionMenu
+        app:menu_colorNormal="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/FABmenuPett"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        app:menu_labels_showShadow="true"
+        app:menu_fab_label=""
+        app:menu_openDirection="up"
+        app:menu_backgroundColor="@android:color/transparent">
+        <com.github.clans.fab.FloatingActionButton
+            app:fab_colorNormal="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Search"
+            app:fab_size="mini"
+            android:src="@drawable/search"
+            android:id="@+id/item2_FabGallery"/>
+        <com.github.clans.fab.FloatingActionButton
+            app:fab_colorNormal="@color/colorPrimaryDark"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Write Post"
+            app:fab_size="mini"
+            android:src="@drawable/write"
+            android:id="@+id/item1_FabGallery"
+            android:onClick="addPetItem"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+
+</RelativeLayout>

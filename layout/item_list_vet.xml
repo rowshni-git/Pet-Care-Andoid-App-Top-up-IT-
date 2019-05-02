@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeLVET"
+    android:padding="10dp">
+    <RelativeLayout
+        android:id="@+id/rellistV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/vetlistimg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/doc"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/vetinfoRel"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/rellistV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/advetname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vet name: Dr. Saiful"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:id="@+id/advetspeciality"
+            android:layout_below="@+id/advetname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="specialty"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        <TextView
+            android:id="@+id/advetnumber"
+            android:layout_below="@+id/advetspeciality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: 018xxxxxxxx"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        <TextView
+            android:id="@+id/advetchamber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chamber: abcd"
+            android:layout_below="@id/advetnumber"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/vetphoneimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_call"
+        android:foregroundGravity="right"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:layout_centerVertical="true"
+        />
+
+
+
+</RelativeLayout>

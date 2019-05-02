@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relMypet"
+    android:padding="10dp">
+    <RelativeLayout
+        android:id="@+id/myPetlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/mypetimg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/peticon"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/></RelativeLayout>
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/myPetlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/mypetname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pet name: pompom"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:id="@+id/mypetage"
+            android:layout_below="@+id/mypetname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age: 2.5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        <TextView
+            android:id="@+id/mypetgender"
+            android:layout_below="@+id/mypetage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender: male"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        <TextView
+            android:id="@+id/mypettype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pet type: Cat"
+            android:layout_below="@id/mypetgender"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

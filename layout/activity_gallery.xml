@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bracu.topup.petcareapp.mainactivity_grid_package.Gallery_Activity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_marginLeft="10dp">
+
+
+    <GridView
+        android:id="@+id/gridViewGal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"></GridView>
+
+    <com.github.clans.fab.FloatingActionMenu
+        app:menu_colorNormal="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/FABmenuGallery"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        app:menu_labels_showShadow="true"
+        app:menu_fab_label=""
+        app:menu_openDirection="up"
+        app:menu_backgroundColor="@android:color/transparent">
+        <com.github.clans.fab.FloatingActionButton
+            app:fab_colorNormal="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Take a photo"
+            app:fab_size="mini"
+            android:src="@drawable/item1fab"
+            android:id="@+id/item2_FabGallery"/>
+        <com.github.clans.fab.FloatingActionButton
+            app:fab_colorNormal="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Open phone gallery"
+            app:fab_size="mini"
+            android:src="@drawable/item2fab"
+            android:id="@+id/item1_FabGallery"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</RelativeLayout>
